@@ -24,10 +24,10 @@
   font-weight: bold;
   color: #222;
 }
-
+/* 
 .hero-title span {
   color: #ff6a00;
-}
+} */
 
 .hero-text {
   color: #777;
@@ -45,6 +45,96 @@
   font-weight: 500;
 }
 
+/* Services Section */
+
+.service-card {
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Solution Section */
+.solution-section {
+  background: #fdf6f2;
+}
+
+.solution-title {
+  font-size: 32px;
+}
+
+.solution-text {
+  margin: 15px 0 25px;
+}
+
+.step {
+  margin-bottom: 10px;
+}
+
+/* NUMBER CIRCLE */
+.step-number {
+  width: 35px;
+  height: 35px;
+  background: #ff6a00;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.btn-orange {
+  background: #ff6a00;
+  color: white;
+  border-radius: 6px;
+}
+
+.btn-orange:hover {
+  background: #e65c00;
+}
+
+.btn-outline-orange {
+  border: 1px solid #ff6a00;
+  color: #ff6a00;
+  border-radius: 6px;
+}
+
+.btn-outline-orange:hover {
+  background: #ff6a00;
+  color: white;
+}
+
+.solution-img {
+  max-width: 80%;
+}
+
+/* Clients Feedback Section */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* Footer Section */
+.footer-top{
+  color:#fff;
+  background:#ff6a00;
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  color: #ff6a00;
+}
+.footer-curve{
+  background: #ff6a00;
+  height:50px;
+  border-top-left-radius: 70% 120%;
+  border-top-right-radius: 70% 120%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero-title {
@@ -58,5 +148,22 @@
   .btn-orange {
     width: 100%;
     margin-top: 10px;
+  }
+  .solution-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .solution-text {
+    text-align: center;
+  }
+
+  .step {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .step-number {
+    margin: 0 auto 10px;
   }
 }
