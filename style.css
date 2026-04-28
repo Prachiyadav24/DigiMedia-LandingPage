@@ -1,7 +1,13 @@
-.text-orange {
+.main-logo{
+  width: 30%;
+}
+.text-color {
   color: #ff6a00;
 }
 
+.custom-align{
+  text-align: center;
+}
 .btn-orange {
   background: #ff6a00;
   color: white;
@@ -119,20 +125,37 @@
 }
 
 /* Footer Section */
+.footer-section {
+  background: #fdf6f2;
+  text-align:center;
+}
 .footer-top{
   color:#fff;
   background:#ff6a00;
+  align-items: center;
 }
 
 .btn-outline-light:hover {
   background: #fff;
   color: #ff6a00;
 }
+.social-media{
+  justify-content:center;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+}:hover{
+  color: #ff6600;
+}
+
 .footer-curve{
   background: #ff6a00;
   height:50px;
   border-top-left-radius: 70% 120%;
   border-top-right-radius: 70% 120%;
+  color: #fff;
+  text-align:center;
 }
 
 /* Responsive */
