@@ -111,7 +111,7 @@
 
 .btn-outline-orange:hover {
   background: #ff6a00;
-  color: white;
+  color: #fff;
 }
 
 .solution-img {
@@ -122,6 +122,23 @@
 .card:hover {
   transform: translateY(-5px);
   transition: 0.3s;
+}
+
+.carousel-btn {
+  background-color: #ffb885;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background-color: #ff6a00;
 }
 
 /* Footer Section */
@@ -145,7 +162,8 @@
 a {
   text-decoration: none;
   color: #212529;
-}:hover{
+}
+a:hover{
   color: #ff6600;
 }
 
@@ -188,5 +206,12 @@ a {
 
   .step-number {
     margin: 0 auto 10px;
+  }
+
+/* carousel */
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
   }
 }
