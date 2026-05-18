@@ -20,7 +20,12 @@
   color: white;
 }
 
-/* HERO */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* HERO */                                                                                                                                                                                                                                                                                                                       
 .hero-section {
   background: #fff;
 }
@@ -176,6 +181,7 @@ a:hover{
   text-align:center;
 }
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 /* Responsive */
 @media (max-width: 768px) {
   .hero-title {
