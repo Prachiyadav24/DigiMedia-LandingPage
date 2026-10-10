@@ -1,4 +1,18 @@
 const contactAddress = "prazeycom@gmail.com";
+const profileStorageKey = "digimedia.profile.v1";
+
+const accountLink = document.querySelector(".navbar-cta");
+if (accountLink) {
+  try {
+    if (localStorage.getItem(profileStorageKey)) {
+      accountLink.href = "profile.html";
+      accountLink.textContent = "My Dashboard";
+      accountLink.setAttribute("aria-label", "Open your project dashboard");
+    }
+  } catch (error) {
+    // Keep the regular sign-up link if browser storage is unavailable.
+  }
+}
 
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
@@ -40,9 +54,35 @@ if (contactForm) {
 const signupForm = document.getElementById("signupForm");
 if (signupForm) {
   const formMessage = document.getElementById("formMessage");
+  const fullNameInput = document.getElementById("fullName");
+  const emailInput = document.getElementById("email");
+
   signupForm.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!signupForm.reportValidity()) return;
-    openEmailDraft(signupForm, "DigiMedia project consultation", formMessage);
+
+    const name = fullNameInput.value.trim();
+    const email = emailInput.value.trim();
+
+    try {
+      let existingProfile = null;
+      try {
+        existingProfile = JSON.parse(localStorage.getItem(profileStorageKey));
+      } catch (error) {
+        existingProfile = null;
+      }
+
+      const profile = existingProfile && existingProfile.email?.toLowerCase() === email.toLowerCase()
+        ? { ...existingProfile, name, email }
+        : { name, email, createdAt: new Date().toISOString(), projects: [] };
+      if (!Array.isArray(profile.projects)) profile.projects = [];
+
+      localStorage.setItem(profileStorageKey, JSON.stringify(profile));
+      formMessage.textContent = "Your demo profile is ready. Opening your dashboard…";
+      window.location.assign("profile.html");
+    } catch (error) {
+      formMessage.textContent = "This browser could not save your profile. Enable local storage or try another browser.";
+      formMessage.className = "mt-3 text-center fw-semibold text-danger";
+    }
   });
 }
