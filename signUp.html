@@ -4,38 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign Up | DigiMedia</title>
 </head>
-<style>
-  .container {
-    border: 2px solid rgb(163, 153, 153);
-    margin: 15px;
-    padding: 10px;
-    background-color: rgb(158, 208, 255);
-  }
 
-  .bg-primary {
-    color: rgb(194, 84, 84);
-  }
-</style>
+<body class="signup-page">
+  <div class="container py-5">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-md-8 col-lg-6">
+        <div class="card signup-card shadow-lg border-0">
+          <div class="row g-0">
+            <div
+              class="col-lg-5 signup-side text-white p-4 p-lg-5 d-flex flex-column justify-content-between position-relative">
+              <div>
+                <h3 class="fw-bold mb-2">Welcome aboard</h3>
+                <p class="mb-4">Tell us a little about yourself and we’ll help you plan your digital growth.</p>
+                <div class="pixel-scene" aria-hidden="true">
+                  <span class="pixel pixel-1"></span>
+                  <span class="pixel pixel-2"></span>
+                  <span class="pixel pixel-3"></span>
+                  <span class="pixel pixel-4"></span>
+                </div>
+              </div>
+              <div class="small text-white-50">
+                <i class="bi bi-stars"></i>Fast setup<br>Secure<br>Growth-focused
+              </div>
+            </div>
 
-<body>
-  <h1>Javascript Tutorial</h1>
-  <p id="signUp"></p>
-  <div id="firstContainer" class="container">
-    <button id="click" onclick="clicked()">Click Me</button>
-    <p>Hey..</p>
+            <div class="col-lg-7 p-4 p-lg-5">
+              <h2 class="fw-bold mb-2 text-dark">Start a Conversation</h2>
+              <p class="text-muted mb-4">Share your details and your email app will open with a project inquiry.</p>
+
+              <form id="signupForm">
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control custom-input" id="fullName" name="name"
+                    placeholder="Enter your name" autocomplete="name" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control custom-input" id="email" name="email"
+                    placeholder="Enter your email" autocomplete="email" required>
+                </div>
+
+                <button type="submit" class="btn btn-orange w-100 mt-2">Continue by Email</button>
+              </form>
+
+              <div id="formMessage" class="mt-3 text-center fw-semibold" role="status" aria-live="polite"></div>
+              <p class="small text-muted mt-3 mb-0">This static demo does not create accounts or send data to a server.
+                Your email app handles the message.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="secondContainer" class="container">
-    <p id="ww">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In sapiente quas corporis atque, explicabo,
-      asperiores nesciunt eos debitis nobis harum voluptas rerum quibusdam ullam nemo illum natus reprehenderit impedit
-      sint.</p>
-  </div>
-  <div>
-    <p id="avg"></p>
-  </div>
-  <script src="/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -19,26 +19,26 @@
   <nav class="navbar navbar-expand-lg bg-white py-3">
     <div class="container">
 
-      <a class="navbar-brand fw-bold" href="#">
-        <img src="/assets/images/logo.png" alt="logo" class="main-logo">
+      <a class="navbar-brand fw-bold" href="landingPage.html">
+        <img src="assets/images/logo.png" alt="logo" class="main-logo">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-between" id="navMenu">
-
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active " href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contactUs.html">Contact us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-        </ul>
-        <a href="/signUp.html" class="btn btn-orange shadow-lg">Sign Up</a>
-        <button id="themeBtn" class="tn-orange">Dark Mode</button>
-
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="navbar-center-group">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="landingPage.html" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact us</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <a href="signUp.html" class="btn btn-orange shadow-lg navbar-cta">Sign Up</a>
       </div>
     </div>
   </nav>
@@ -59,19 +59,25 @@
             cutting-edge.
           </p>
 
-          <button class="btn btn-orange me-3" id="getStart">Get Started</button>
+          <a class="btn btn-orange me-3" href="contactUs.html">Get Started</a>
 
           <div class="mt-3">
-            <a href="#" class="explore">Explore more
+            <a href="services.html" class="explore">Explore more
               <i class="fa fa-caret-down"></i>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-6 custom-align mt-4 mt-lg-0">
-          <img src="/assets/images/shar(1).jpg" class="img-fluid hero-img" alt="hero-img">
+        <div class="col-lg-6 custom-align mt-4 mt-lg-0 position-relative">
+          <img src="assets/images/shar(1).jpg" class="img-fluid hero-img" alt="hero-img">
+          <div class="hero-pixels" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -117,7 +123,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 custom-align mb-4 mb-lg-0">
-          <img src="/assets/images/illu(2).jpg" class="img-fluid solution-img" alt="solution">
+          <img src="assets/images/illu(2).jpg" class="img-fluid solution-img" alt="solution">
         </div>
 
         <div class="col-lg-6">
@@ -163,8 +169,8 @@
           </div>
 
           <div class="mt-4">
-            <button class="btn btn-orange me-2">Get Started</button>
-            <button class="btn btn-outline-orange">Read More</button>
+            <a class="btn btn-orange me-2" href="contactUs.html">Get Started</a>
+            <a class="btn btn-outline-orange" href="about.html">Read More</a>
           </div>
         </div>
       </div>
@@ -183,11 +189,11 @@
           blanditiis?<br> Maxime, magnam reiciendis cupiditate amet ab sequi<br>neque dolorum facere atque. Ducimus,
           eaque dolores.<br>magnam reiciendis cupiditate amet ab sequi.
         </p>
-        <button class="btn btn-orange">Get Started</button>
+        <a class="btn btn-orange" href="contactUs.html">Get Started</a>
       </div>
 
       <div class="col-lg-6 mt-4 mt-lg-0">
-        <img src="/assets/images/woman-sear.jpg" class="img-fluid agency-img" alt="agency-img">
+        <img src="assets/images/woman-sear.jpg" class="img-fluid agency-img" alt="agency-img">
       </div>
     </div>
   </div>
@@ -217,7 +223,7 @@
                   <div class="col-md-4">
                     <div class="card shadow-sm p-3 h-100">
                       <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/images/7803955.jpg" class="rounded-circle me-3">
+                        <img src="assets/images/client1.jpg" class="client-img rounded-circle me-3" alt="Raj Jadhav">
                         <div>
                           <h6 class="mb-0 text-color">Raj Jadhav</h6>
                           <small class="text-muted">Founder</small>
@@ -231,7 +237,7 @@
                   <div class="col-md-4">
                     <div class="card shadow-sm p-3 h-100">
                       <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/images/7803955.jpg" class="rounded-circle me-3">
+                        <img src="assets/images/client5.jpg" class="client-img rounded-circle me-3" alt="Prachi Yadav">
                         <div>
                           <h6 class="mb-0 text-color">Prachi Yadav</h6>
                           <small class="text-muted">Marketing Lead</small>
@@ -245,7 +251,7 @@
                   <div class="col-md-4">
                     <div class="card shadow-sm p-3 h-100">
                       <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/images/7803955.jpg" class="rounded-circle me-3">
+                        <img src="assets/images/client2.jpg" class="client-img rounded-circle me-3" alt="Samay Jadhav">
                         <div>
                           <h6 class="mb-0 text-color">Samay Jadhav</h6>
                           <small class="text-muted">CEO</small>
@@ -264,7 +270,7 @@
                   <div class="col-md-4">
                     <div class="card shadow-sm p-3 h-100">
                       <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/images/7803955.jpg" class="rounded-circle me-3">
+                        <img src="assets/images/client4.jpg" class="client-img rounded-circle me-3" alt="Mona Roy">
                         <div>
                           <h6 class="mb-0 text-color">Mona Roy</h6>
                           <small class="text-muted">Designer</small>
@@ -280,7 +286,7 @@
                   <div class="col-md-4">
                     <div class="card shadow-sm p-3 h-100">
                       <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/images/7803955.jpg" class="rounded-circle me-3">
+                        <img src="assets/images/client3.jpg" class="client-img rounded-circle me-3" alt="Shreyas Patil">
                         <div>
                           <h6 class="mb-0 text-color">Shreyas Patil</h6>
                           <small class="text-muted">Entrepreneur</small>
@@ -295,7 +301,7 @@
                   <div class="col-md-4">
                     <div class="card shadow-sm p-3 h-100">
                       <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/images/7803955.jpg" class="rounded-circle me-3">
+                        <img src="assets/images/client6.jpg" class="client-img rounded-circle me-3" alt="Tanmay Patil">
                         <div>
                           <h6 class="mb-0 text-color">Tanmay Patil</h6>
                           <small class="text-muted">Manager</small>
@@ -327,7 +333,7 @@
 
       <h5 class="mb-3 mb-md-0">Ready to get started?</h5>
 
-      <a href="/contactUs.html" class="btn btn-outline-light px-4">Contact Us</a>
+      <a href="contactUs.html" class="btn btn-outline-light px-4">Contact Us</a>
     </div>
   </div>
   <footer class="footer-section pt-5">
@@ -335,41 +341,39 @@
       <div class="row text-md-start">
 
         <div class="col-md-3 mb-4">
-          <img src="/assets/images/logo.png" alt="logo" class="main-logo">
+          <img src="assets/images/logo.png" alt="logo" class="main-logo">
           <div class="d-flex justify-content-md-start justify-content-center gap-3 mt-3">
-            <a href="#" class="fa fa-facebook "></a>
-            <a href="#" class="fa fa-instagram "></a>
-            <a href="#" class="fa fa-twitter "></a>
+            <a href="mailto:prazeycom@gmail.com" aria-label="Email DigiMedia" class="fa fa-envelope"></a>
           </div>
         </div>
 
         <div class="col-md-3 mb-4">
           <h7 class="fw-bold">Company</h7>
           <ul class="list-unstyled">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+            <li><a href="mailto:prazeycom@gmail.com?subject=Careers%20at%20DigiMedia">Careers</a></li>
+            <li><a href="about.html">Team</a></li>
           </ul>
         </div>
 
         <div class="col-md-3 mb-4">
           <h7 class="fw-bold">Design</h7>
           <ul class="list-unstyled">
-            <li><a href="#">Design services</a></li>
-            <li><a href="#">UX/UI Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="services.html">Design services</a></li>
+            <li><a href="services.html">UX/UI Design</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="contactUs.html">Request pricing</a></li>
           </ul>
         </div>
 
         <div class="col-md-3 mb-4">
           <h7 class="fw-bold">Resources</h7>
           <ul class="list-unstyled">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">E-books</a></li>
-            <li><a href="#">Guides</a></li>
-            <li><a href="#">Affiliates</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html">E-books</a></li>
+            <li><a href="blog.html">Guides</a></li>
+            <li><a href="contactUs.html">Partnerships</a></li>
           </ul>
         </div>
 
