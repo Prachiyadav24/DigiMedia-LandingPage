@@ -59,10 +59,12 @@ if (signupForm) {
 
   signupForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    fullNameInput.value = fullNameInput.value.trim();
+    emailInput.value = emailInput.value.trim();
     if (!signupForm.reportValidity()) return;
 
-    const name = fullNameInput.value.trim();
-    const email = emailInput.value.trim();
+    const name = fullNameInput.value;
+    const email = emailInput.value;
 
     try {
       let existingProfile = null;
